@@ -88,6 +88,9 @@
 
 
 
+  <meta property="fb:admins" content="" />
+  <meta property="fb:app_id" content="" />
+
 
 
 <meta name="description" content="关于痛苦、情绪、情感计算 20170315随笔  　　 人为何需要情感 　　人作为高级动物最擅长的可能就是让各种情感占据内心，但是科技发达如此的今天，还是没有类似速效救心丸一样的药物或者像外科手术一样的精确打击能调控人的情绪。 　　很多的电影、影视作品里都提到了痛苦才是唯一真实存在、能证明人是人的东西，教育我们要正视它、接纳它、善待它。《西部世界》里的一个观点:我们在自己的痛苦中反复挣扎，从而构成">
@@ -140,6 +143,24 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -378,8 +399,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/13/About-Emotion/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/13/About-Emotion/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/05/13/About-Emotion/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -450,6 +470,16 @@
 
       
         
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
       
 
       
@@ -494,11 +524,11 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="fb-comments"
+           data-href="http://yoursite.com/2017/05/13/About-Emotion/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
       </div>
     
   </div>
@@ -753,26 +783,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://QCH1993.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/05/13/About-Emotion/';
-          this.page.identifier = '2017/05/13/About-Emotion/';
-          this.page.title = 'About Emotion';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://QCH1993.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -791,6 +801,10 @@
   
 
 
+
+
+
+  
 
 
 

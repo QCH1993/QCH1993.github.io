@@ -88,6 +88,9 @@
 
 
 
+  <meta property="fb:admins" content="" />
+  <meta property="fb:app_id" content="" />
+
 
 
 <meta name="description" content="qianchen">
@@ -138,6 +141,24 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -358,8 +379,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/14/MyGallery/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/14/MyGallery/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/05/14/MyGallery/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -503,8 +523,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/13/About-Emotion/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/13/About-Emotion/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/05/13/About-Emotion/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -635,8 +654,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/05/13/1st-article/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/13/1st-article/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/05/13/1st-article/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -964,14 +982,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://QCH1993.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -990,6 +1000,10 @@
   
 
 
+
+
+
+  
 
 
 
