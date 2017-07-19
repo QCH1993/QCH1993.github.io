@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="qianchen">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="##How to add start-option for multisystem## 1  查询各个系统挂载的(hd0,msdos*)和uuid，记录下来，具体操作见：    http://blog.csdn.net/zhouboxiao/article/details/71079908 2  在linux系统中用vim 打开/boot/grub/grub.cfg，文末添加： menuentry">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to add start-option for multisystem">
+<meta property="og:url" content="http://yoursite.com/2017/07/20/How to add start-option for multisystem/index.html">
 <meta property="og:site_name" content="QCH1993">
-<meta property="og:description" content="qianchen">
-<meta property="og:updated_time" content="2017-05-14T02:27:07.496Z">
+<meta property="og:description" content="##How to add start-option for multisystem## 1  查询各个系统挂载的(hd0,msdos*)和uuid，记录下来，具体操作见：    http://blog.csdn.net/zhouboxiao/article/details/71079908 2  在linux系统中用vim 打开/boot/grub/grub.cfg，文末添加： menuentry">
+<meta property="og:updated_time" content="2017-07-19T20:48:14.330Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="qianchen">
+<meta name="twitter:title" content="How to add start-option for multisystem">
+<meta name="twitter:description" content="##How to add start-option for multisystem## 1  查询各个系统挂载的(hd0,msdos*)和uuid，记录下来，具体操作见：    http://blog.csdn.net/zhouboxiao/article/details/71079908 2  在linux系统中用vim 打开/boot/grub/grub.cfg，文末添加： menuentry">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/20/How to add start-option for multisystem/"/>
 
 
 
 
 
-  <title>tags | QCH1993</title>
+  <title>How to add start-option for multisystem | QCH1993</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -179,7 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -284,25 +284,173 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/20/How to add start-option for multisystem/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QCH1993">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QCH1993">
+    </span>
 
     
-    
-      <div class="tag-cloud">
-        <div class="tag-cloud-title">
-            1 tag in total
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">How to add start-option for multisystem</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-20T12:48:27+08:00">
+                2017-07-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/20/How to add start-option for multisystem/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/07/20/How to add start-option for multisystem/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-        <div class="tag-cloud-tags">
-          <a href="/tags/Emotion/" style="font-size: 12px; color: #ccc">Emotion</a>
-        </div>
-      </div>
+      </header>
     
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>##How to add start-option for multisystem##</p>
+<p>1  查询各个系统挂载的(hd0,msdos*)和uuid，记录下来，具体操作见：</p>
+<p>   <a href="http://blog.csdn.net/zhouboxiao/article/details/71079908" target="_blank" rel="external">http://blog.csdn.net/zhouboxiao/article/details/71079908</a></p>
+<p>2  在linux系统中用vim 打开/boot/grub/grub.cfg，文末添加：</p>
+<p>menuentry ‘Window10’ {</p>
+<p>insmod ntfs</p>
+<p>set root=(hd0,msdos1)</p>
+<p>search –no-floppy –fs-uuid –set 1C12FC8012FC5FE6</p>
+<p>chainloader +1</p>
+<p>}</p>
+<p>参考：<a href="http://blog.csdn.net/zhouboxiao/article/details/71079908" target="_blank" rel="external">http://blog.csdn.net/zhouboxiao/article/details/71079908</a></p>
+<p>3  vim 修改的方法见：</p>
+<p><a href="http://cn.linux.vbird.org/linux_basic/0310vi_2.php" target="_blank" rel="external">http://cn.linux.vbird.org/linux_basic/0310vi_2.php</a></p>
+<hr>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/16/How-to-use-Git-and-Hexo-to-build-a-personal-blog/" rel="next" title="How to use Git and Hexo to build a personal blog?">
+                <i class="fa fa-chevron-left"></i> How to use Git and Hexo to build a personal blog?
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -314,7 +462,7 @@
   <div class="comments" id="comments">
     
       <div class="fb-comments"
-           data-href="http://yoursite.com/tags/index.html"
+           data-href="http://yoursite.com/2017/07/20/How to add start-option for multisystem/"
            data-numposts="10"
            data-width="100%"
            data-colorscheme="light">
@@ -555,6 +703,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
